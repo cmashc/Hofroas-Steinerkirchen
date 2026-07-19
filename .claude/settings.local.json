@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(awk 'NR>=139 && NR<=148 {print NR\": \"length\\($0\\)\" chars: \"substr\\($0,1,300\\)}' \"c:\\\\Users\\\\FamMa\\\\Downloads\\\\Hofroas\\\\hofroas_2026\\(2\\).html\")",
+      "Bash(awk '{print NR\": \"length\\($0\\)\" chars\"}' \"c:\\\\Users\\\\FamMa\\\\Downloads\\\\Hofroas\\\\hofroas_2026\\(2\\).html\")",
+      "Bash(sort -t: -k2 -rn)",
+      "Bash(awk 'NR>=212 && NR<=220 {print NR\": \"length\\($0\\)\" chars: \"substr\\($0,1,500\\)}' \"c:\\\\Users\\\\FamMa\\\\Downloads\\\\Hofroas\\\\hofroas_2026\\(2\\).html\")",
+      "Bash(awk 'NR>=149 && NR<=215 {print NR\": \"substr\\($0,1,200\\)}' \"c:\\\\Users\\\\FamMa\\\\Downloads\\\\Hofroas\\\\hofroas_2026\\(2\\).html\")",
+      "Bash(awk 'NR>=8 && NR<=120 {print NR\": \"substr\\($0,1,300\\)}' \"c:\\\\Users\\\\FamMa\\\\Downloads\\\\Hofroas\\\\hofroas_2026\\(2\\).html\")",
+      "Bash(awk 'NR>=299 && NR<=308 {print NR\": \"$0}' \"c:\\\\Users\\\\FamMa\\\\Downloads\\\\Hofroas\\\\hofroas_2026\\(2\\).html\")"
+    ]
+  }
+}
