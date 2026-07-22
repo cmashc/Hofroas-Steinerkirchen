@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hofroas Steinerkirchen//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:hofroas-2026@steinerkirchen
+DTSTAMP:20260101T000000Z
+DTSTART:20260906T100000
+DTEND:20260906T170000
+SUMMARY:4. Hofroas Steinerkirchen
+DESCRIPTION:Wandertag zu 5 Bauernhoefen in Steinerkirchen - Start bei Fam. Hoertenhuemer\, Frohnhofen 2
+LOCATION:Frohnhofen 2\, Steinerkirchen an der Traun
+END:VEVENT
+END:VCALENDAR
