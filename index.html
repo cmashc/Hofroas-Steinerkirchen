@@ -23,11 +23,12 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:var(--cream);color:var(-
 .h-title{font-family:Georgia,serif;font-size:clamp(68px,13vw,126px);font-weight:700;color:#fff;line-height:.87;letter-spacing:-3px;margin-bottom:.65rem;}
 .h-sub{font-family:Georgia,serif;font-size:clamp(15px,3vw,22px);color:rgba(255,255,255,.78);font-style:italic;margin-bottom:2.5rem;}
 .pills{display:flex;gap:1.2rem;flex-wrap:wrap;justify-content:center;}
-.pill{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.11);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.22);border-radius:40px;padding:9px 20px;color:#fff;font-size:14px;font-weight:500;}
-.pill svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;opacity:.75;}
+.pill{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.11);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.22);border-radius:40px;padding:11px 24px;color:#fff;font-size:17px;font-weight:500;}
+.pill svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;opacity:.75;}
 .scroll-hint{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:5px;color:rgba(255,255,255,.4);font-size:10px;letter-spacing:3px;text-transform:uppercase;cursor:pointer;}
 .scroll-hint span{width:1px;height:36px;background:linear-gradient(to bottom,rgba(255,255,255,.35),transparent);animation:sp 2s ease-in-out infinite;}
 @keyframes sp{0%,100%{opacity:.25;}50%{opacity:1;}}
+@keyframes pulse-dabei{0%,100%{transform:scale(1);opacity:1;}50%{transform:scale(1.08);opacity:.7;}}
 .info-band{background:var(--gd);}
 .ig{display:grid;grid-template-columns:repeat(4,1fr);}
 @media(max-width:600px){.ig{grid-template-columns:repeat(2,1fr);}}
@@ -149,8 +150,8 @@ footer strong{color:rgba(255,255,255,.6);}
     <div class="ey">Willkommen</div>
     <h2 class="st">Ein Tag auf dem Bauernhof</h2>
     <div class="dv" style="margin:1rem auto 1.75rem;"></div>
-    <p style="max-width:640px;margin:0 auto;font-size:17px;line-height:1.9;color:var(--tm);">Bei der <strong>Hofroas</strong> öffnen fünf Familienbetriebe aus Steinerkirchen ihre Tore. Wandere den 5,2&nbsp;km langen Rundweg und genieße köstliche Schmankerl direkt vom Hof. Ein Fest für die ganze Familie!</p>
-    <p style="max-width:640px;margin:.9rem auto 0;font-size:15px;line-height:1.8;color:var(--tm);"><strong>Der Rundweg ist für alle Altersgruppen geeignet</strong> – von Jung bis Alt – <strong>und kinderwagentauglich.</strong></p>
+    <p style="max-width:640px;margin:0 auto;font-size:17px;line-height:1.9;color:var(--tm);">Bei der <strong>Hofroas</strong> öffnen fünf Familienbetriebe aus Steinerkirchen an der Traun ihre Tore. Wandere den 5,2&nbsp;km langen Rundweg und genieße köstliche Schmankerl direkt am Hof. Ein Fest für die ganze Familie!</p>
+    <p style="max-width:640px;margin:.9rem auto 0;font-size:15px;line-height:1.8;color:var(--tm);"><strong>Der Rundweg ist für alle Altersgruppen geeignet</strong> – von Jung bis Alt – <strong>und ist auch kinderwagentauglich.</strong></p>
   </div>
 </section>
 
@@ -179,9 +180,11 @@ footer strong{color:rgba(255,255,255,.6);}
         <div class="st-txt-col">
           <div class="st-label">STATION 1</div>
           <div class="st-name">Fam. Hörtenhuemer</div>
-          <p class="st-desc">Der Startpunkt der Hofroas! Bei Familie Hörtenhuemer in Frohnhofen 2 (vlg. Moar z'Hof) beginnt das Abenteuer. Die Hauptstation bietet Imker, Schaubrennerei, eine Bodenprofil-Ausstellung zum Bodenwasserschutz sowie eine Maschinenausstellung von MAUCH und Huemer Solar. Vereine Bauernbund und ÖVP sind vor Ort, Küche und Bar sorgen für Verpflegung, Kinderprogramm mit Hüpfburg.</p>
+          <p class="st-desc">Der Startpunkt der Hofroas! Bei Familie Hörtenhuemer in Frohnhofen 2 (vlg. Moar z'Hof) beginnt das Abenteuer. Die Hauptstation bietet Imker, Schaubrennerei, eine Bodenprofil-Ausstellung zum Bodenwasserschutz sowie eine Maschinenausstellung von MAUCH und Huemer Solar. Die Vereine Bauernbund und ÖVP sorgen für Schmankerl aus der Küche und die Jungbauernschaft versorgt an der Bar mit erfrischenden Getränken. Für die Kinder ist eine Hüpfburg aufgebaut.</p>
           <div class="st-tags">
-            <span class="st-tag">Hauptstation</span>
+
+            <span class="st-tag">Parkplatz</span>
+            <span class="st-tag">Bodenprofil</span>
             <span class="st-tag">Imker &amp; Schaubrennerei</span>
             <span class="st-tag">Maschinenausstellung</span>
             <span class="st-tag">Hüpfburg</span>
@@ -197,11 +200,10 @@ footer strong{color:rgba(255,255,255,.6);}
         <div class="st-txt-col">
           <div class="st-label">STATION 2</div>
           <div class="st-name">Hörbinger</div>
-          <p class="st-desc">Bei Familie Hörbinger trifft Sport auf Genuss: Die Sportschützen laden zum Speckschiessen ein, die Freiwillige Feuerwehr Steinerkirchen sorgt für Kinderprogramm und an der Seiterlbar gibt es kühle Getränke. <strong>Kein WC an dieser Station.</strong></p>
+          <p class="st-desc">Bei Familie Hörbinger trifft Sport auf Genuss. Die Sportschützen laden zum Speckschiessen ein, die Freiwillige Feuerwehr Steinerkirchen sorgt für Kinderprogramm und an der Seiterlbar gibt es kühle Getränke. <strong>Kein WC an dieser Station.</strong></p>
           <div class="st-tags">
             <span class="st-tag">Speckschiessen</span>
             <span class="st-tag">Seiterlbar</span>
-            <span class="st-tag">FF Steinerkirchen</span>
             <span class="st-tag">Kinderprogramm</span>
           </div>
         </div>
@@ -215,10 +217,11 @@ footer strong{color:rgba(255,255,255,.6);}
         <div class="st-txt-col">
           <div class="st-label">STATION 3</div>
           <div class="st-name">Fam. Dollmann</div>
-          <p class="st-desc">Bei Familie Dollmann in Ritzendorf gibt es Hightech auf dem Feld: LW-Drohnenvorführungen von Martin Ziegelbäck, Maschinenring mit Maschinenausstellung und eine Esserwisser-Ausstellung der Landwirtschaftskammer. Annas Genuss Imbiss bietet Snacks, Kaffee und Kuchen. Ausschank mit Seiterlbar. Vereine: Bäuerinnen und JVP.</p>
+          <p class="st-desc">Bei Familie Dollmann in Ritzendorf gibt es Hightech auf dem Feld. Es gibt eine LW-Drohnenvorführungen, Maschinenring mit einer Maschinenausstellung und eine Esserwisser-Ausstellung der Landwirtschaftskammer. Annas Genuss Imbiss bietet Snacks, Kaffee und Kuchen. Ausschank mit Seiterlbar. Für das Kinderprogramm sorgen Bäuerinnen und die JVP.</p>
           <div class="st-tags">
             <span class="st-tag">Drohnenvorführung</span>
-            <span class="st-tag">Maschinenring</span>
+            <span class="st-tag">Maschinenring Ausstellung</span>
+            <span class="st-tag">Esserwisser</span>
             <span class="st-tag">Annas Genuss Imbiss</span>
             <span class="st-tag">Kaffee &amp; Kuchen</span>
           </div>
@@ -233,11 +236,12 @@ footer strong{color:rgba(255,255,255,.6);}
         <div class="st-txt-col">
           <div class="st-label">STATION 4</div>
           <div class="st-name">Fam. Pühringer</div>
-          <p class="st-desc">Die vierte Station bei Familie Pühringer in Atzmannsdorf bietet Einblick in moderne Schweinehaltung und Innovationfarm-Technik mit Feldroboter und Feldversuch. Die Jäger übernehmen Bewirtung sowie Kinderprogramm mit Falknerei. Ausstellung aktueller LW-Geräte, evtl. Team Gruber mit Quads.</p>
+          <p class="st-desc">Die vierte Station bei Familie Pühringer in Atzmannsdorf bietet Einblick in moderne Schweinehaltung und Innovationfarm-Technik mit Feldroboter und Feldversuch. Auserdem gibt es eine Ausstellung weiterer aktueller Landwirtschaftlicher Geräte. Die Jäger übernehmen Bewirtung mit Wildspezialitäten sowie Kinderprogramm mit Falknerei. </p>
           <div class="st-tags">
-            <span class="st-tag">Schweinehaltung</span>
-            <span class="st-tag">Innovationfarm &amp; Feldroboter</span>
-            <span class="st-tag">Falknerei · Jäger</span>
+            <span class="st-tag">Schweinehaltung</span> 
+            <span class="st-tag">Feldversuch</span>
+            <span class="st-tag">Feldroboter</span>
+            <span class="st-tag">Falknerei</span>
           </div>
         </div>
       </div>
@@ -250,12 +254,11 @@ footer strong{color:rgba(255,255,255,.6);}
         <div class="st-txt-col">
           <div class="st-label">STATION 5</div>
           <div class="st-name">Fam. Rau</div>
-          <p class="st-desc">Den Abschluss der Hofroas bildet der Hühnerbetrieb der Familie Rau in Stockham mit Einblick in die Geflügelwirtschaft. Dazu gibt es eine Oldtimer-Ausstellung, Senioren mit Spiralos-Programm sowie Snacks und Getränke vom Skiclub Steinerkirchen. Kinderprogramm vom Skiclub.</p>
+          <p class="st-desc">Den Abschluss der Hofroas bildet der Hühnerbetrieb der Familie Rau in Stockham mit Einblick in die Geflügelwirtschaft und eine Oldtimer-Ausstellung. Für Verpflegung werden von den Senioren Spiralos geboten und ein herzhafter Kaiserschmarn und Getränke werden vom Skiclub Steinerkirchen serviert. Zusätzlich kümmert sich der Skiclub auch um das Kinderprogramm.</p>
           <div class="st-tags">
-            <span class="st-tag">Hühnerbetrieb &amp; Geflügel</span>
+            <span class="st-tag">Hühnerbetrieb</span>
             <span class="st-tag">Oldtimer-Ausstellung</span>
-            <span class="st-tag">Skiclub Steinerkirchen</span>
-            <span class="st-tag">Senioren (Spiralos)</span>
+            <span class="st-tag">Spiralos &amp; Kaiserschmarn</span>            
           </div>
         </div>
       </div>
@@ -290,10 +293,19 @@ footer strong{color:rgba(255,255,255,.6);}
       <div class="st-txt-col">
         <div class="st-label">Shuttle-Service</div>
         <div class="st-name">Bequem zwischen den Stationen</div>
-        <p class="st-desc">Zwischen den fünf Stationen der Hofroas verkehrt ein <strong>Shuttle-Service</strong>, der dich bequem von Hof zu Hof bringt. So kannst du entspannt einzelne Abschnitte der Route zufahren, falls du nicht die gesamte Strecke zu Fuß zurücklegen möchtest.</p>
+        <p class="st-desc">Zwischen den fünf Stationen der Hofroas verkehrt ein <strong>Shuttle-Service</strong>, der dich bequem von Hof zu Hof bringt. So kannst du entspannt einzelne Abschnitte der Route erreichen, falls du nicht die gesamte Strecke zu Fuß zurücklegen möchtest.</p>
+      </div>
+    </div>
+
+    <div class="st-row st-row-rev" style="margin-top:3.5rem;">
+      <div class="st-img-col">
+        <img src="Subseite/Kinderwagen.jpg" alt="Kinderwagentauglicher Weg">
+      </div>
+      <div class="st-txt-col">
+        <div class="st-label">Für die ganze Familie</div>
+        <div class="st-name">Jung &amp; Alt · Kinderwagentauglich</div>
+        <p class="st-desc">Der Rundweg ist für alle Altersgruppen geeignet von Jung bis Alt <strong>und kinderwagentauglich</strong>, sodass auch die Kleinsten bequem mitkommen können.</p>
         <div class="st-tags">
-          <span class="st-tag">Jung &amp; Alt geeignet</span>
-          <span class="st-tag">Kinderwagentauglich</span>
         </div>
       </div>
     </div>
@@ -301,33 +313,10 @@ footer strong{color:rgba(255,255,255,.6);}
     <div style="margin-top:3.5rem;">
       <div class="st-label">Anreise &amp; Parken</div>
       <div class="st-name" style="margin-bottom:1rem;">Parkmöglichkeiten</div>
-      <p class="st-desc" style="max-width:100%;">Entlang der Route stehen ausgeschilderte <strong>Parkplätze</strong> zur Verfügung. Bitte folge bei der Anreise den Hinweisschildern und den Anweisungen der Einweiser vor Ort, um einen reibungslosen Ablauf für alle Besucher zu gewährleisten.</p>
+      <p class="st-desc" style="max-width:100%;">Parkplätze sind <strong>ausschließlich</strong> bei Fam. Hörtenhuemer (erste Station Frohnhofen 2) verfügbar. Bitte folge bei der Anreise den Hinweisschildern und den Anweisungen der Einweiser vor Ort, um einen reibungslosen Ablauf für alle Besucher zu gewährleisten.</p>
       <div class="map-wrap" style="margin-top:1.5rem;">
         <img src="Subseite/Parkplatz.jpg" alt="Parkplatz" style="width:100%;height:auto;display:block;">
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="sec reg-sec">
-  <div class="si">
-    <div class="ey">Kulinarik</div>
-    <h2 class="st">Regional. Frisch. Vom Hof.</h2>
-    <div class="dv"></div>
-    <p class="rlead">An jeder Station erwarten dich Köstlichkeiten aus der Region – von Mostviertler Spezialitäten über frisches Brot bis hin zu warmen Schmankerln.</p>
-    <div class="rg">
-      <!-- Frisches Brot: loaf of bread -->
-      <div class="ri"><div class="ri-icon"><svg viewBox="0 0 24 24"><path d="M3 11C3 7.134 7.03 4 12 4s9 3.134 9 7v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-9z"/><line x1="3" y1="11" x2="21" y2="11"/></svg></div><p>Frisches Brot</p></div>
-      <!-- Obst & Gemüse: apple -->
-      <div class="ri"><div class="ri-icon"><svg viewBox="0 0 24 24"><path d="M12 2c1-2 4-2 4 0"/><path d="M7 6c-2.5.5-5 3-5 7a9 9 0 0 0 9 9 9 9 0 0 0 9-9c0-4-2.5-6.5-5-7-1.5-.3-3 0-4 1-1-1-2.5-1.3-4-1z"/></svg></div><p>Obst &amp; Gemüse</p></div>
-      <!-- Getränke: beer mug / wine glass -->
-      <div class="ri"><div class="ri-icon"><svg viewBox="0 0 24 24"><path d="M5 3h14l-1.5 14.5a2 2 0 0 1-2 1.5H8.5a2 2 0 0 1-2-1.5L5 3z"/><path d="M3 3h18"/><path d="M8 10c0 2 8 2 8 0"/></svg></div><p>Getränke</p></div>
-      <!-- Milchprodukte: milk bottle -->
-      <div class="ri"><div class="ri-icon"><svg viewBox="0 0 24 24"><path d="M8 2h8l1 4H7L8 2z"/><path d="M7 6v2c-2 1-3 3-3 5v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7c0-2-1-4-3-5V6"/><line x1="12" y1="11" x2="12" y2="17"/><line x1="9" y1="14" x2="15" y2="14"/></svg></div><p>Milchprodukte</p></div>
-      <!-- Warme Speisen: bowl with steam -->
-      <div class="ri"><div class="ri-icon"><svg viewBox="0 0 24 24"><path d="M12 2c0 2-2 2-2 4s2 2 2 4-2 2-2 4"/><path d="M8 2c0 2-2 2-2 4s2 2 2 4-2 2-2 4"/><path d="M16 2c0 2-2 2-2 4s2 2 2 4-2 2-2 4"/><path d="M3 16h18a9 9 0 0 1-18 0z"/></svg></div><p>Warme Speisen</p></div>
-      <!-- Wurst & Speck: meat/ham -->
-      <div class="ri"><div class="ri-icon"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 5 5 0 0 1-5 5 3 3 0 0 0-3 3 5 5 0 0 1-5 5A10 10 0 0 1 2 12 10 10 0 0 1 12 2z"/><circle cx="12" cy="12" r="3"/></svg></div><p>Wurst &amp; Speck</p></div>
     </div>
   </div>
 </section>
@@ -356,13 +345,19 @@ footer strong{color:rgba(255,255,255,.6);}
 </section>
 
 <section class="cta">
-  <div class="ey" style="color:var(--brown);font-size:10px;letter-spacing:5px;text-transform:uppercase;font-weight:700;margin-bottom:.65rem;">Sei dabei!</div>
+  <div class="ey" style="color:var(--brown);font-size:20px;letter-spacing:5px;text-transform:uppercase;font-weight:700;margin-bottom:.65rem;display:inline-block;animation:pulse-dabei 1.6s ease-in-out infinite;">Sei dabei!</div>
   <h2 class="st" style="color:var(--brown);font-family:Georgia,serif;">Sonntag, 6. September 2026</h2>
   <p class="cta-sub">Startpunkt: Fam. Hörtenhuemer · Frohnhofen 2 · Steinerkirchen · Beginn 10:00 Uhr</p>
-  <a class="btn" href="https://www.google.com/maps/search/Frohnhofen+2+Steinerkirchen+an+der+Traun" target="_blank">
-    <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-    Anfahrt &amp; Google Maps
-  </a>
+  <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;">
+    <a class="btn" href="https://www.google.com/maps/search/Frohnhofen+2+Steinerkirchen+an+der+Traun" target="_blank">
+      <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      Anfahrt &amp; Google Maps
+    </a>
+    <a class="btn" href="data:text/calendar;charset=utf8,BEGIN%3AVCALENDAR%0AVERSION%3A2.0%0APRODID%3A-%2F%2FHofroas%20Steinerkirchen%2F%2FDE%0ABEGIN%3AVEVENT%0AUID%3Ahofroas-2026%40steinerkirchen%0ADTSTAMP%3A20260101T000000Z%0ADTSTART%3A20260906T100000%0ADTEND%3A20260906T170000%0ASUMMARY%3A4.%20Hofroas%20Steinerkirchen%0ADESCRIPTION%3AWandertag%20zu%205%20Bauernh%C3%B6fen%20in%20Steinerkirchen%20-%20Start%20bei%20Fam.%20H%C3%B6rtenhuemer%2C%20Frohnhofen%202%0ALOCATION%3AFrohnhofen%202%2C%20Steinerkirchen%20an%20der%20Traun%0AEND%3AVEVENT%0AEND%3AVCALENDAR" download="Hofroas-2026.ics">
+      <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      Termin speichern
+    </a>
+  </div>
 </section>
 
 <footer>
@@ -375,7 +370,7 @@ footer strong{color:rgba(255,255,255,.6);}
 <script>
 (function(){
   const COORDS   = [[48.071327,13.968455],[48.071333,13.968448],[48.071757,13.968023],[48.071847,13.968251],[48.071754,13.968532],[48.071706,13.968678],[48.071705,13.968913],[48.071826,13.969193],[48.072025,13.969557],[48.072103,13.969887],[48.072195,13.970222],[48.072444,13.970883],[48.07301,13.972227],[48.073263,13.972764],[48.073335,13.973012],[48.073372,13.973261],[48.073369,13.974617],[48.073387,13.975351],[48.073436,13.975854],[48.073538,13.976266],[48.073708,13.976758],[48.074142,13.977769],[48.074486,13.978475],[48.074761,13.978938],[48.074969,13.979215],[48.075033,13.979254],[48.075241,13.979198],[48.075371,13.979256],[48.075438,13.979132],[48.075371,13.979256],[48.074829,13.980445],[48.074177,13.982087],[48.073658,13.983365],[48.073514,13.983939],[48.0734,13.984291],[48.072991,13.984963],[48.072343,13.985796],[48.072082,13.986231],[48.071625,13.987113],[48.071523,13.987498],[48.071483,13.987652],[48.07094,13.988182],[48.070767,13.988435],[48.070694,13.988678],[48.070569,13.989287],[48.070414,13.989576],[48.070256,13.990111],[48.070149,13.990353],[48.069817,13.990844],[48.069567,13.991158],[48.06858,13.992117],[48.068053,13.992503],[48.067512,13.992817],[48.06609,13.993329],[48.065456,13.993592],[48.064386,13.993222],[48.063812,13.993131],[48.062877,13.99299],[48.062875,13.992878],[48.062784,13.991902],[48.062802,13.991654],[48.062852,13.99146],[48.062926,13.991369],[48.063183,13.991053],[48.063308,13.990833],[48.06349,13.990415],[48.063617,13.989991],[48.064015,13.988224],[48.064418,13.985271],[48.064586,13.984088],[48.064652,13.98339],[48.064774,13.981989],[48.064923,13.97971],[48.065018,13.978839],[48.065041,13.97834],[48.065009,13.97727],[48.065051,13.97726],[48.065589,13.977125],[48.065625,13.976988],[48.065892,13.976634],[48.06623,13.976097],[48.066446,13.97583],[48.06683,13.975509],[48.066888,13.975383],[48.066903,13.975242],[48.067017,13.975237],[48.067124,13.975185],[48.067468,13.974865],[48.068484,13.973693],[48.068561,13.973651],[48.068925,13.972716],[48.069555,13.971324],[48.069843,13.970609],[48.070038,13.970221],[48.070332,13.969756],[48.071051,13.968776],[48.071327,13.968455]];
-  const STATIONS = [{id:1,lat:48.071327,lon:13.968455,name:"Fam. Hörtenhuemer",addr:"Frohnhofen 2",sub:"vlg. Moar z'Hof",tag:"Hauptstation",tags:["Imker & Schaubrennerei","Maschinenausstellung","Hüpfburg"],img:"img1"},{id:2,lat:48.075438,lon:13.979132,name:"Hörbinger",addr:"Ritzendorf 11",sub:"",tag:"Speckschiessen",img:"img2"},{id:3,lat:48.071483,lon:13.987652,name:"Fam. Dollmann",addr:"Ritzendorf 7",sub:"",tag:"Drohnenvorführung",img:"img3"},{id:4,lat:48.062877,lon:13.99299,name:"Fam. Pühringer",addr:"Atzmannsdorf 9",sub:"",tag:"Innovationfarm",tags:["Innovationfarm & Feldroboter","Falknerei · Jäger"],img:"img4"},{id:5,lat:48.065371,lon:13.977721,name:"Fam. Rau",addr:"Stockham 9",sub:"",tag:"Oldtimer-Ausstellung",img:"img5"}];
+  const STATIONS = [{id:1,lat:48.071327,lon:13.968455,name:"Fam. Hörtenhuemer",addr:"Frohnhofen 2",sub:"vlg. Moar z'Hof",tag:"Hauptstation",tags:["Parkplatz","Bodenprofil","Imker & Schaubrennerei","Maschinenausstellung","Hüpfburg"],img:"img1"},{id:2,lat:48.075438,lon:13.979132,name:"Hörbinger",addr:"Ritzendorf 11",sub:"",tag:"Speckschiessen",tags:["Speckschiessen","Seiterlbar","Kinderprogramm"],img:"img2"},{id:3,lat:48.071483,lon:13.987652,name:"Fam. Dollmann",addr:"Ritzendorf 7",sub:"",tag:"Drohnenvorführung",tags:["Drohnenvorführung","Maschinenring Ausstellung","Esserwisser","Annas Genuss Imbiss","Kaffee & Kuchen"],img:"img3"},{id:4,lat:48.062877,lon:13.99299,name:"Fam. Pühringer",addr:"Atzmannsdorf 9",sub:"",tag:"Innovationfarm",tags:["Schweinehaltung","Feldversuch","Feldroboter","Falknerei"],img:"img4"},{id:5,lat:48.065371,lon:13.977721,name:"Fam. Rau",addr:"Stockham 9",sub:"",tag:"Oldtimer-Ausstellung",tags:["Hühnerbetrieb","Oldtimer-Ausstellung","Spiralos & Kaiserschmarn"],img:"img5"}];
   const IMGS     = {img1:"Hof/Fronhofen 2_Station 1.png",img2:"Hof/Höbringer Station 2.png",img3:"Hof/Fam. Dollmann Station 3.jpg",img4:"Hof/Fam. Pühringer Station 4.jpg",img5:"Hof/Fam. Rau Station 5.png"};
 
   const map = L.map('map', {zoomControl:true, scrollWheelZoom:false});
