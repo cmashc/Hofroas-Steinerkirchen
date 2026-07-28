@@ -84,9 +84,10 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:var(--cream);color:var(-
 .sp-sec{background:#f3ede0;}
 .sp-grid{display:flex;flex-wrap:wrap;gap:.85rem;margin-top:1.75rem;}
 .sp-logo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:2rem 2.5rem;align-items:center;margin-top:2.5rem;}
-.sp-logo-item{display:flex;align-items:center;justify-content:center;background:#fff;border-radius:10px;padding:1rem;box-shadow:0 2px 12px rgba(0,0,0,.07);transition:transform .2s,box-shadow .2s;height:120px;}
+.sp-logo-item{display:flex;align-items:center;justify-content:center;background:#fff;border-radius:10px;padding:1rem;box-shadow:0 2px 12px rgba(0,0,0,.07);transition:transform .2s,box-shadow .2s;height:120px;overflow:hidden;}
 .sp-logo-item:hover{transform:translateY(-3px);box-shadow:0 6px 24px rgba(0,0,0,.13);}
-.sp-logo-item img{max-width:100%;max-height:100%;width:auto;height:70px;object-fit:contain;display:block;}
+.sp-logo-item img{max-width:100%;max-height:100%;width:auto;height:70px;object-fit:contain;display:block;} 
+.sp-logo-item .moos-logo{width:115%;height:115%;max-width:none;max-height:none;object-fit:cover;object-position:center;display:block;transform:scale(1.2) translateY(4%);}
 @media(max-width:600px){.sp-logo-grid{grid-template-columns:repeat(2,1fr);gap:1.2rem;}}
 
 .chip{border:1.5px solid #d8d0bc;border-radius:4px;padding:8px 16px;font-size:13px;font-weight:700;color:var(--tm);background:#fff;}
@@ -339,7 +340,7 @@ footer strong{color:rgba(255,255,255,.6);}
       <a class="sp-logo-item" href="https://www.baumgartner-baeckerei.at/" target="_blank" rel="noopener"><img src="Logos/Logo Baumgartner.jpeg" alt="Baumgartner" style="transform:scale(1.5);"></a>
       <a class="sp-logo-item" href="https://mauch.at/" target="_blank" rel="noopener"><img src="Logos/Logo Mauch.jpg" alt="Mauch"></a>
       <a class="sp-logo-item" href="https://www.gollinger.net/" target="_blank" rel="noopener"><img src="Logos/gollinger-logo-2015-welle Kopie.jpg" alt="Gollinger"></a>
-      <a class="sp-logo-item" href="https://mooslogo.at/" target="_blank" rel="noopener"><img src="Logos/Moos Logo-rund.png" alt="Moos Logo"></a>
+      <a class="sp-logo-item" href="https://mooslogo.at/" target="_blank" rel="noopener"><img class="moos-logo" src="Logos/Moos Logo-rund.png" alt="Moos Logo"></a>
       <a class="sp-logo-item" href="https://spitzbart-transport.at/" target="_blank" rel="noopener"><img src="Logos/spitzbart_logo_trans - Kopie.png" alt="Spitzbart"></a>
     </div>
   </div>
